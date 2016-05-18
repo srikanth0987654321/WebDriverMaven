@@ -19,6 +19,7 @@ public class LoginTest {
 		driver.get("http://gmail.com");
 		driver.findElement(By.id("Email")).sendKeys("www.yahoo.com");
 		driver.findElement(By.id("Passwd")).sendKeys("www.yahoo.com");
+		driver.findElement(By.id("signIn")).click();
 	}
     @AfterSuite
     public void teardown(){
